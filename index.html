@@ -38,19 +38,19 @@
 		      		<h4 class="off-white">Menu</h4>
 	        		<ul class="nav flex-column">
 			          	<li class="nav-item">
-			            	<a class="nav-link active" aria-current="page" href="#">
+			            	<a class="nav-link active" aria-current="page" href="index.html">
 			              		<div class="icon orange-bg"><img src="images/icons/dashboard.png" alt=""></div>
 			             		Dashboard
 			            	</a>
 			          	</li>
 	          			<li class="nav-item">
-	            			<a class="nav-link" href="#">
+	            			<a class="nav-link" href="user-account.html">
 	              				<div class="icon green-bg"><img src="images/icons/user.png" alt=""></div>
               					User Account
 			            	</a>
 			          	</li>
 				        <li class="nav-item">
-				            <a class="nav-link" href="#">
+				            <a class="nav-link" href="billing.html">
 				              	<div class="icon"><img src="images/icons/Group.png" alt=""></div>
 				              	Billing & Invoice
 				            </a>
@@ -193,7 +193,7 @@
 						    					<h2 class="blue-text font-bold">Likes</h2>
 						    					<p class="tiny-text">All Likes Made</p>
 						    				</div>
-					    					<a href="#" class="icon rounded-circle ml-auto"><img src="images/icons/full-icon.png" alt=""></a>
+					    					<a href="#" class="icon rounded-circle ml-auto" data-bs-toggle="modal" data-bs-target="#likes_full-view"><img src="images/icons/full-icon.png" alt=""></a>
 					    				</div>
 				    				</div>
 				    				<div class="card-body py-0">
@@ -996,14 +996,389 @@
 		    		</div>
 		    	</div>
 
+	<!-- Modal -->
+	<div class="modal fade p-0" id="likes_full-view" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-sm modal-fullscreen-sm-down mt-0 ms-auto me-0">
+	    <div class="modal-content">
+	      <div class="modal-body p-0">
+	      	<div class="card mb-3">
+    				<div class="card-header">
+    					<div class="card-header-wrap pb-0 d-flex">
+	    					<div class="heading-left w-100">
+		    					<h2 class="blue-text font-bold">Likes</h2>
+		    					<p class="tiny-text">All Likes Made</p>
+
+		    					<div class="search-box">
+		    						<label for="exampleDataList" class="form-label">Datalist example</label>
+									<input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Search">
+									<datalist id="datalistOptions">
+									  <option value="San Francisco"></option>
+									  <option value="New York"></option>
+									  <option value="Seattle"></option>
+									  <option value="Los Angeles"></option>
+									  <option value="Chicago"></option>
+									</datalist>
+		    					</div>
+		    				</div>
+		    				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	    				</div>
+    				</div>
+    				<div class="card-body py-0">
+						<div class="media">
+                            <div class="avatar me-2">
+                            	<img src="images/Mask Group.png" alt="">
+                            </div>
+                                        
+                            <div class="media-body overflow-hidden">
+                                <div class="mb-1">
+                                    <h6 class="text-truncate mb-0 mr-auto">Gucci Sweater</h6>
+                                    <p class="small text-muted text-nowrap mb-0">
+                                    	<span>2 h ago</span>
+                                    	<span><a href="#">@Judy Jane Designers Hand Bag</a></span>
+                                    </p>
+                                </div>
+                                <div class="row activity-btn d-flex">
+                                	<div class="col-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/likes.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto mx-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/comments.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto ms-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/share.png" alt="">
+                                			2.2 K                                                			
+                                		</a>
+                                	</div>
+                                	
+                                </div>
+                            </div>
+                        </div>
+                        <!-- media end -->
+
+                        <div class="media">
+                            <div class="avatar me-2">
+                            	<img src="images/Mask Group.png" alt="">
+                            </div>
+                                        
+                            <div class="media-body overflow-hidden">
+                                <div class="mb-1">
+                                    <h6 class="text-truncate mb-0 mr-auto">Gucci Sweater</h6>
+                                    <p class="small text-muted text-nowrap mb-0">
+                                    	<span>2 h ago</span>
+                                    	<span><a href="#">@Judy Jane Designers Hand Bag</a></span>
+                                    </p>
+                                </div>
+                                <div class="row activity-btn d-flex">
+                                	<div class="col-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/likes.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto mx-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/comments.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto ms-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/share.png" alt="">
+                                			2.2 K                                                			
+                                		</a>
+                                	</div>
+                                	
+                                </div>
+                            </div>
+                        </div>
+                        <!-- media end -->
+
+                        <div class="media">
+                            <div class="avatar me-2">
+                            	<img src="images/Mask Group.png" alt="">
+                            </div>
+                                        
+                            <div class="media-body overflow-hidden">
+                                <div class="mb-1">
+                                    <h6 class="text-truncate mb-0 mr-auto">Gucci Sweater</h6>
+                                    <p class="small text-muted text-nowrap mb-0">
+                                    	<span>2 h ago</span>
+                                    	<span><a href="#">@Judy Jane Designers Hand Bag</a></span>
+                                    </p>
+                                </div>
+                                <div class="row activity-btn d-flex">
+                                	<div class="col-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/likes.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto mx-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/comments.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto ms-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/share.png" alt="">
+                                			2.2 K                                                			
+                                		</a>
+                                	</div>
+                                	
+                                </div>
+                            </div>
+                        </div>
+                        <!-- media end -->
+
+                        <div class="media">
+                            <div class="avatar me-2">
+                            	<img src="images/Mask Group.png" alt="">
+                            </div>
+                                        
+                            <div class="media-body overflow-hidden">
+                                <div class="mb-1">
+                                    <h6 class="text-truncate mb-0 mr-auto">Gucci Sweater</h6>
+                                    <p class="small text-muted text-nowrap mb-0">
+                                    	<span>2 h ago</span>
+                                    	<span><a href="#">@Judy Jane Designers Hand Bag</a></span>
+                                    </p>
+                                </div>
+                                <div class="row activity-btn d-flex">
+                                	<div class="col-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/likes.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto mx-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/comments.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto ms-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/share.png" alt="">
+                                			2.2 K                                                			
+                                		</a>
+                                	</div>
+                                	
+                                </div>
+                            </div>
+                        </div>
+                        <!-- media end -->
+
+                        <div class="media">
+                            <div class="avatar me-2">
+                            	<img src="images/Mask Group.png" alt="">
+                            </div>
+                                        
+                            <div class="media-body overflow-hidden">
+                                <div class="mb-1">
+                                    <h6 class="text-truncate mb-0 mr-auto">Gucci Sweater</h6>
+                                    <p class="small text-muted text-nowrap mb-0">
+                                    	<span>2 h ago</span>
+                                    	<span><a href="#">@Judy Jane Designers Hand Bag</a></span>
+                                    </p>
+                                </div>
+                                <div class="row activity-btn d-flex">
+                                	<div class="col-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/likes.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto mx-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/comments.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto ms-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/share.png" alt="">
+                                			2.2 K                                                			
+                                		</a>
+                                	</div>
+                                	
+                                </div>
+                            </div>
+                        </div>
+                        <!-- media end -->
+
+                        <div class="media">
+                            <div class="avatar me-2">
+                            	<img src="images/Mask Group.png" alt="">
+                            </div>
+                                        
+                            <div class="media-body overflow-hidden">
+                                <div class="mb-1">
+                                    <h6 class="text-truncate mb-0 mr-auto">Gucci Sweater</h6>
+                                    <p class="small text-muted text-nowrap mb-0">
+                                    	<span>2 h ago</span>
+                                    	<span><a href="#">@Judy Jane Designers Hand Bag</a></span>
+                                    </p>
+                                </div>
+                                <div class="row activity-btn d-flex">
+                                	<div class="col-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/likes.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto mx-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/comments.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto ms-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/share.png" alt="">
+                                			2.2 K                                                			
+                                		</a>
+                                	</div>
+                                	
+                                </div>
+                            </div>
+                        </div>
+                        <!-- media end -->
+
+                        <div class="media">
+                            <div class="avatar me-2">
+                            	<img src="images/Mask Group.png" alt="">
+                            </div>
+                                        
+                            <div class="media-body overflow-hidden">
+                                <div class="mb-1">
+                                    <h6 class="text-truncate mb-0 mr-auto">Gucci Sweater</h6>
+                                    <p class="small text-muted text-nowrap mb-0">
+                                    	<span>2 h ago</span>
+                                    	<span><a href="#">@Judy Jane Designers Hand Bag</a></span>
+                                    </p>
+                                </div>
+                                <div class="row activity-btn d-flex">
+                                	<div class="col-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/likes.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto mx-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/comments.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto ms-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/share.png" alt="">
+                                			2.2 K                                                			
+                                		</a>
+                                	</div>
+                                	
+                                </div>
+                            </div>
+                        </div>
+                        <!-- media end -->
+
+                        <div class="media">
+                            <div class="avatar me-2">
+                            	<img src="images/Mask Group.png" alt="">
+                            </div>
+                                        
+                            <div class="media-body overflow-hidden">
+                                <div class="mb-1">
+                                    <h6 class="text-truncate mb-0 mr-auto">Gucci Sweater</h6>
+                                    <p class="small text-muted text-nowrap mb-0">
+                                    	<span>2 h ago</span>
+                                    	<span><a href="#">@Judy Jane Designers Hand Bag</a></span>
+                                    </p>
+                                </div>
+                                <div class="row activity-btn d-flex">
+                                	<div class="col-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/likes.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto mx-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/comments.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto ms-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/share.png" alt="">
+                                			2.2 K                                                			
+                                		</a>
+                                	</div>
+                                	
+                                </div>
+                            </div>
+                        </div>
+                        <!-- media end -->
+
+                        <div class="media">
+                            <div class="avatar me-2">
+                            	<img src="images/Mask Group.png" alt="">
+                            </div>
+                                        
+                            <div class="media-body overflow-hidden">
+                                <div class="mb-1">
+                                    <h6 class="text-truncate mb-0 mr-auto">Gucci Sweater</h6>
+                                    <p class="small text-muted text-nowrap mb-0">
+                                    	<span>2 h ago</span>
+                                    	<span><a href="#">@Judy Jane Designers Hand Bag</a></span>
+                                    </p>
+                                </div>
+                                <div class="row activity-btn d-flex">
+                                	<div class="col-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/likes.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto mx-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/comments.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto ms-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/share.png" alt="">
+                                			2.2 K                                                			
+                                		</a>
+                                	</div>
+                                	
+                                </div>
+                            </div>
+                        </div>
+                        <!-- media end -->
+
+
+    				</div>
+    			</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
 			</main>
 		</div>
 	</div>
 
-	<footer>
-		<div class="container">
-			
-		</div>
-	</footer>
+	
 </body>
 </html>

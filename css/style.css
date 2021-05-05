@@ -32,7 +32,7 @@ ul li{padding: 0 0 4px;}
 .aligncenter{display: block;margin:0 auto; float: none;}
 .alignright{float:right; margin-left:10px; }
 .alignleft{float: left; margin-right:10px;}
-
+.text-right{text-align: right;}
 a{color:#002261CC;}
 /*-------------------*/
 .container{margin: 0 auto; width: 100%;}
@@ -150,3 +150,268 @@ ul.follow-list-options{margin: 0;padding: 0;text-align: center;}
 .graph-specification li{display: inline-block;margin-right: 10px;}
 .graph-specification .dot{width: 7px;height: 7px;display: inline-block;margin-left: 10px;vertical-align: middle;}
 
+/*-------home-modal---------*/
+.modal .modal-sm .modal-body{height: 100vh;overflow-y: auto;}
+.modal .search-box .form-label{display: none;}
+.modal .search-box input.form-control{background: rgba(0, 34, 97, 0.05); width: 100%; border-radius: 10px;
+    background: url(../images/icons/search.png) no-repeat 95% center;margin-bottom: 10px;}
+
+/*-----------billing-------------*/
+.Package-box {box-shadow: 0px 0px 15px 0px #00226133;background-color: #ffffff;transition:all 0.3s ease 0s; 
+	-webkit-transition: all 0.3s ease 0s; -moz-transition: all 0.3s ease 0s; -ms-transition: all 0.3s ease 0s;
+-o-transition: all 0.3s ease 0s;}
+.Package-box:hover{transform: scale(1.3); position: relative;z-index: 99;}
+.Package-box .Package-header{background: linear-gradient(141.35deg, #002261 25.1%, #007EF9 66.42%);display: inline-block;width: 100%;}
+.Package-box .Package-header h2{color: #ffffff;font-size: 18px;font-weight: 700;padding: 15px;margin-top:15px;}
+.Package-box .Package-body{padding: 15px;}
+.Package-box .Package-body h3{border-bottom: 1px solid rgba(0, 34, 97, 0.4); text-align: center;margin: 0;padding: 15px 0;
+color: #002261;}
+.Package-box .Package-body h3 span.big-text{font-size: 44px;font-weight: 700;}
+.Package-box .Package-body ul{list-style: none;padding: 0;}
+.Package-box .Package-body ul li{color: #0022614D;}
+.Package-box .Package-body a,.btn-3{background: #002261;color: #ffffff;border: 1px solid #002261;
+	padding: 8px 10px;display: inline-block;border-radius: 0;}
+.Package-box .Package-body a:hover,.btn-3:hover{background-color: transparent;color:#002261; }
+
+.Invoice-detail-box h5{color: rgba(0, 34, 97, 0.6);}
+.Invoice-detail-box .price p{font-size: 20px;color: #3A3A3A;font-weight: 700;}
+.activty-btn a.btn{box-shadow: 0px 0px 15px 0px #6B68FF26;background: #002261;width: 40px;height: 40px;display: flex;align-items: center;
+	justify-content: center;border-radius: 50%;margin:0 5px	5px;}
+
+.Invoice-detail-box:nth-child(odd){background: rgba(0, 0, 0, 0.05);}	
+
+/*-----*/
+
+.payment-card{height: 120px;min-width: 200px;background: linear-gradient(141.35deg, #002261 25.1%, #007EF9 66.42%);border-radius: 10px;
+position: relative;}
+.payment-card::before{width: 100%;height: 100%;position: absolute;right: 0;top: 0;background-image: url(../images/icons/card-shade.png);
+background-repeat: no-repeat;content: '';background-position: right;}
+
+.payment-card-wrap{position: relative;z-index: 99;}
+.payment-card p{font-size: 10px;color: #ffffff;}
+.payment-card .card-top a{width: 14px;display: flex;align-items: center;justify-content: center;border-radius: 50%;height: 14px;
+background-color: #ffffff;}
+.default-card{font-size: 10px;font-weight: 600;color: rgba(0,0,0,0.6);margin: 10px 0;text-align: right;}
+
+.payment-method-row{margin: 0 -15px;display: flex;}
+.payment-method{padding: 0 15px;}
+.payment-method .payment-method-box{display: inline-block;height: 120px;width: 230px;  
+	background: #F6F6F6;box-shadow: 3px 3px 20px rgba(164, 164, 164, 0.25);border-radius: 10px;}
+
+
+/*---------*/
+div#open-modal.modal-window{position: relative;}
+.modal-window {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.25);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+.modal-window:target {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-window > div {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2em;
+  background: white;
+}
+.modal-window header {
+  font-weight: bold;
+}
+.modal-window h1 {
+  font-size: 150%;
+  margin: 0 0 15px;
+}
+
+.modal-close {
+  color: #aaa;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+}
+.modal-close:hover {
+  color: black;
+}
+
+
+.modal-window > div {
+  border-radius: 1rem;
+}
+
+.modal-window div:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+/*--------------------*/
+/*  Toggle Switch  */
+
+.toggleSwitch span span {
+  display: none;
+}
+
+@media only screen {
+  .toggleSwitch {
+    display: inline-block;
+    height: 21px;
+    position: relative;
+    overflow: visible;
+    padding: 0;
+    margin-left:0px;vertical-align: middle;
+    cursor: pointer;
+    width: 45px
+  }
+  .toggleSwitch * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .toggleSwitch label,
+  .toggleSwitch > span {
+    line-height: 21px;
+    height: 21px;
+    vertical-align: middle;
+  }
+  .toggleSwitch input:focus ~ a,
+  .toggleSwitch input:focus + label {
+    outline: none;
+  }
+  .toggleSwitch label {
+    position: relative;
+    z-index: 3;
+    display: block;
+    width: 100%;
+  }
+  .toggleSwitch input {
+    position: absolute;
+    opacity: 0;
+    z-index: 5;
+  }
+  .toggleSwitch > span {
+    position: absolute;
+    left: -50px;
+    width: 100%;
+    margin: 0;
+    padding-right: 50px;
+    text-align: left;
+    white-space: nowrap;
+    color: #002261;
+
+  }
+  .toggleSwitch > span span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: block;
+    width: 50%;
+    margin-left: 50px;
+    text-align: left;
+    font-size: 0.9em;
+    width: 100%;
+    left: 15%;
+    top: 0px;
+    opacity: 0;font-size: 11px;
+  }
+  .toggleSwitch a {
+    position: absolute;
+    right: 50%;
+    z-index: 4;
+    display: block;
+    padding: 0;
+    left: 0px;
+    background-color: #002261;
+    border-radius: 5px;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    width: 21px;
+    height: 21px;
+  }
+  .toggleSwitch > span span:first-of-type {
+    color: #002261;
+    opacity: 1;
+    left: 45%;
+  }
+  .toggleSwitch > span:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50px;
+    top: 0px;
+    background: #0022614D;
+
+    border: 1px solid #ccc;
+    border-radius:5px;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  .toggleSwitch input:checked ~ a {
+    border-color: #fff;
+    left: 100%;
+    margin-left: -8px;
+  }
+/*  .toggleSwitch input:checked ~ span:before {
+    border-color:#002261;
+    box-shadow: inset 0 0 0 30px #002261;
+  }*/
+  .toggleSwitch input:checked ~ span span:first-of-type {
+    opacity: 0;
+  }
+  .toggleSwitch input:checked ~ span span:last-of-type {
+    opacity: 1;
+  }
+
+
+
+/*------------------*/
+.btn-icon{width: 35px;height: 35px;border-radius: 50%;display: flex;align-items: center;justify-content: center;
+background: #002261;}
+
+
+.inner-heading{border-bottom: 1px solid #E7E8E5;font-style: normal;font-weight: bold;padding-bottom: 10px;margin: 10px 0 20px;
+font-size: 14px; line-height: 20px; text-transform: capitalize; color: #3F3D56;}
+.social-list{list-style: none;padding: 0;}
+.social-list li{margin: 0 0 20px;}
+
+/*--------------*/
+.custom-form .form-group{position: relative;margin-bottom: 30px;}
+.custom-form .form-group label{position: absolute;top: -10px;left: 10px;color: #002261;font-size: 11px;background-color: #F6F6F6;
+	padding:0 5px;font-weight: 600;}
+.custom-form input.form-control {
+    border: 0.3px solid rgba(0, 34, 97, 0.6);
+    padding: 10px 10px;
+    background-color: transparent;
+    border-radius: 0;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+main{position: relative;padding-bottom: 80px;height: 100vh;overflow-y: auto;}
+/*--------*/
+.footer{border-top: 0.5px solid rgba(0, 0, 0, 0.2);position:fixed;bottom: 0;width: calc(100% - 16.6666666667% - 60px);
+background-color: #ffffff;}
+.footer ul{list-style: none;padding: 0;margin: 0;}
+.footer ul li{display: inline-block;,margin-right: 15px;}
+.footer p{margin: 0;}
