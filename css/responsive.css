@@ -13,10 +13,7 @@
 }
 
 
-/*---------------*/
-@media screen and (max-width: 768px){
 
-}
 /*---------------*/
 @media screen and (max-width: 768px){
 .mobile-header{display: block;}
@@ -27,11 +24,18 @@ nav#sidebarMenu.sidebar.show{left: 0;}
 .sidebar .icon.orange-bg{display: none;}
 nav#sidebarMenu.sidebar.show .close-sidebar{display: inline-block;}
 }
+
+/*---------------*/
+@media screen and (max-width: 767px){
+
+}
 /*---------------*/
 @media screen and (max-width: 640px){
 
 }
 /*---------------*/
 @media screen and (max-width: 480px){
-
+.d-mobile-none{display: none !important;}
+.login-box{background-color: transparent;border:none;box-shadow: none;padding: 40px 15px; }
+.login-btn{padding: 10px;}
 }

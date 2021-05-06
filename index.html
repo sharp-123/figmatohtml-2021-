@@ -10,7 +10,11 @@
 	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/custom.js"></script>
-	<!-- <script src="js/bootstrap.min.js"></script> -->
+
+	<script src="js/chart.js"></script>
+
+	<link href="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.css" rel="stylesheet" type="text/css" />
+	<script src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/dashboard.css">
@@ -60,7 +64,7 @@
 				            </a>
 				        </li>
 			          	<li class="nav-item">
-			            	<a class="nav-link" href="#">
+			            	<a class="nav-link" href="support.html">
 			              		<div class="icon"><img src="images/icons/help.png" alt=""></div>
 			              		Support
 			            	</a>
@@ -97,8 +101,36 @@
 		    	</div>
 		    	<!-- mobile-header-end -->
 
-		      	<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+		      	<div class="d-flex align-items-center pt-3 pb-2 mb-3 border-bottom">
 		        	<h1 class="text-uppercase">Dashboard</h1>
+		        	<div class="calendar-wrap ms-3">
+		        		<div class="date-box">
+		        			1 Nov 2020 - 30 Nov 2020
+		        			<i class="fa fa-calendar" aria-hidden="true"></i>
+		        		</div>
+
+		        		<div class="ui form">
+			                <div class="two fields">
+			                  	<div class="field">
+			                    	<div class="ui calendar" id="rangestart">
+			                      		<div class="ui input dark left icon">             
+					                        <input type="text" placeholder="From">
+					                        <i class="fa fa-calendar" aria-hidden="true"></i>
+			                      		</div>
+			                    	</div>
+			                  	</div>
+				                <div class="field">
+				                    <div class="ui calendar" id="rangeend">
+				                      	<div class="ui input left icon">
+				                        	<input type="text" placeholder="To">
+				                        	<i class="fa fa-calendar" aria-hidden="true"></i>
+				                      	</div>
+				                    </div>
+				                </div>
+			                </div>
+			            </div>
+		        	</div>
+		        	<!--  -->
 		    	</div>
 
 		    	<div class="row">
@@ -153,8 +185,18 @@
 				    					<span class="ml-auto"><img src="images/icons/share.png" alt=""></span>
 				    				</div>
 				    				<div class="card-body d-flex align-items-center">
-				    					<h3>2.4K</h3>
-				    					<span class="ml-auto green-text tiny-text font-bold"><img src="images/icons/up-icon.png" alt=""> 30%</span>
+				    					<div class="col-6">
+				    						<p>People</p>
+				    						<h3>2.4K</h3>
+				    						<span class="ml-auto green-text tiny-text font-bold">
+				    							<img src="images/icons/up-icon.png" alt="">50%
+				    						</span>
+				    					</div>
+				    					<div class="col-6">
+					    					<p>Porsh Parties</p>
+					    					<h3>3.4K</h3>
+					    					<span class="ml-auto green-text tiny-text font-bold"><img src="images/icons/up-icon.png" alt=""> 30%</span>
+					    				</div>
 				    				</div>
 				    			</div>
 				    		</div>
@@ -477,15 +519,7 @@
 				    			</div>
 				    		</div>
 				    		<div class="col-xs-12">
-				    			<div class="card mb-3 graph-tab">
-				    				<div class="card-header">
-				    					<!-- <div class="card-header-wrap pb-0 d-flex">
-					    					<div class="heading-left">
-						    					<h2 class="blue-text font-bold">Offers Sent</h2>
-						    				</div>
-					    					<a href="#" class="icon rounded-circle ml-auto"><img src="images/icons/full-icon.png" alt=""></a>
-					    				</div> -->
-				    				</div>
+				    			<div class="card mb-3 graph-tab d-mobile-none">
 				    				<div class="card-body pt-0">
 				    					<ul class="nav nav-pills mb-3" id="pills-tab1" role="tablist">
 											<li class="nav-item" role="presentation">
@@ -510,17 +544,55 @@
 												<ul class="graph-specification">
 													<li>Following <span class="rounded-circle red-bg dot"></span></li>
 													<li>Followers <span class="rounded-circle light-blue-bg dot"></span></li>
-												</ul>
-												<img src="images/graphic.png" alt="">
+												</ul>													
+												<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
 											</div>
 											<div class="tab-pane fade" id="pills-unfollowed" role="tabpanel" aria-labelledby="pills-unfollowed-tab">2</div>
 											<div class="tab-pane fade" id="pills-following" role="tabpanel" aria-labelledby="pills-following-tab">3</div>
 											<div class="tab-pane fade" id="pills-shares" role="tabpanel" aria-labelledby="pills-shares-tab">4</div>
 											<div class="tab-pane fade" id="pills-comments" role="tabpanel" aria-labelledby="pills-comments-tab">5</div>
 										</div>
+									</div>
+								</div>
+								<!-- mobile-none -->
+
+								<div class="tab-container d-md-none">
+
+									<div class="tab-navigation">              
+									    <select id="select-box">
+									      <option value="1">Followers and Following</option>
+									      <option value="2">Option 2</option>
+									      <option value="3">Option 3</option>
+									      <option value="4">Option 4</option>
+									      <option value="5">Option 5</option>
+									    </select>
+									</div>
+										  
+								  	<div id="tab-1" class="tab-content1">
+								    	<h2>Followers and Following Chart </h2>
+										<ul class="graph-specification">
+											<li>Following <span class="rounded-circle red-bg dot"></span></li>
+											<li>Followers <span class="rounded-circle light-blue-bg dot"></span></li>
+										</ul>													
+										<canvas id="myChart1" style="width:100%;max-width:600px"></canvas>
+								  	</div>
+								  	<div id="tab-2" class="tab-content1">
+								    This is tab 2 content.
+								  	</div>
+								  	<div id="tab-3" class="tab-content1">
+								    This is tab 3 content.
+								  	</div>
+								 	<div id="tab-4" class="tab-content1">
+								    This is tab 4 content.
+								  	</div>
+								  	<div id="tab-5" class="tab-content1">
+								    This is tab 5 content.
+								  	</div>
+										  
+								</div>
 				    					
-				    				</div>
-				    			</div>
+				    				
 				    		</div>
 				    	</div>
 		    		</div>
@@ -1404,5 +1476,70 @@
 	</div>
 
 	
+	<script type="text/javascript">
+		$(".date-box").click(function(){
+		  	$(".ui.form").toggleClass("open");
+		});
+
+	    $('#rangestart').calendar({
+	      type: 'date',
+	      endCalendar: $('#rangeend')
+	    });
+	    $('#rangeend').calendar({
+	      type: 'date',
+	      startCalendar: $('#rangestart')
+	    });
+
+
+	</script>
+
+	<script>
+		var xValues = ["S", "M", "T", "W", "T" , "F" , "S"];
+		var barColors = ["red", "green","blue","orange","brown"];
+
+		new Chart("myChart", {
+		  type: "line",
+		  data: {
+		    labels: xValues,
+		    datasets: [{
+		    borderColor: "blue",
+		    data: [300,550,900,320,500,650,600]
+		    },
+		    {
+		    borderColor: "red",
+		    data: [300,650,1200,400,700,900,880]
+		    }]
+		  },
+		  options: {
+		    legend: {display: false},
+		    title: {
+		      display: true,
+		      
+		    }
+		  }
+		});
+
+		new Chart("myChart1", {
+		  type: "line",
+		  data: {
+		    labels: xValues,
+		    datasets: [{
+		    borderColor: "blue",
+		    data: [300,550,900,320,500,650,600]
+		    },
+		    {
+		    borderColor: "red",
+		    data: [300,650,1200,400,700,900,880]
+		    }]
+		  },
+		  options: {
+		    legend: {display: false},
+		    title: {
+		      display: true,
+		      
+		    }
+		  }
+		});
+	</script> 
 </body>
 </html>

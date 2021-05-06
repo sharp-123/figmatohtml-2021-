@@ -22,6 +22,10 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
 
+    <!-- range-slider -->
+    <script src="js/range-slider.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/range-slider.css">
+
 </head>
 <body>
 	<div class="container-fluid">
@@ -61,7 +65,7 @@
 				            </a>
 				        </li>
 			          	<li class="nav-item">
-			            	<a class="nav-link" href="#">
+			            	<a class="nav-link" href="support.html">
 			              		<div class="icon"><img src="images/icons/help.png" alt=""></div>
 			              		Support
 			            	</a>
@@ -244,13 +248,10 @@
 				    				</div>
 		    					</div>
 		    					<p>No. of Of Follower/Day</p>
-		    					<div class="range-slider mb-5">  
-		    						<div id="slider" class="slider-design"></div>
-		    						<div class="full-range">
-		    							<span class="min-value">10</span>
-		    							<span class="max-value">2500</span>
-		    						</div>
-		    					</div>
+		    					<div class="range-slider mb-5">
+			                        <input type="text" class="js-range-slider" value="" />
+			                    </div>
+
 		    					<div class="row">
 		    						<div class="col-lg-6">		    						
 			    						<input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">	
@@ -290,13 +291,10 @@
 				    				</div>
 		    					</div>
 		    					<p>No. of LIkes/Day</p>
-		    					<div class="range-slider mb-5">  
-		    						<div id="slider2" class="slider-design"></div>
-		    						<div class="full-range">
-		    							<span class="min-value">10</span>
-		    							<span class="max-value">2500</span>
-		    						</div>
-		    					</div>
+		    					<div class="range-slider mb-5">
+			                        <input type="text" class="js-range-slider" value="" />
+			                    </div>
+
 		    					<div class="row">
 		    						<div class="col-lg-6">		    						
 			    						<input class="styled-checkbox" id="styled-checkbox-3" type="checkbox" value="value1">	
@@ -341,13 +339,10 @@
 		    					</div>
 		    					<p>No. of Of Follower/Day</p>
 
-		    					<div class="range-slider mb-5">  
-		    						<div id="slider3" class="slider-design"></div>
-		    						<div class="full-range">
-		    							<span class="min-value">10</span>
-		    							<span class="max-value">2500</span>
-		    						</div>
-		    					</div>
+		    					<div class="range-slider mb-5">
+			                        <input type="text" class="js-range-slider" value="" />
+			                    </div>
+
 		    					<div class="d-block">
 			    					<p>
 									  	<label class="toggleSwitch nolabel" onclick="">
@@ -535,7 +530,7 @@
                   </div>
 
                   <div class="form-group">
-                    <input type="submit" name="" value="Login" class="login-bt spacer">
+                    <input type="submit" name="" value="Login" class="login-bt spacer" data-bs-toggle="modal" data-bs-target="#cogratulations-popup">
                   </div>
 
                   <div class="form-group">
@@ -546,6 +541,33 @@
 	    </div>
 	  </div>
 	</div>
+
+	<!-- modal 1-->
+
+	<div class="modal fade" id="cogratulations-popup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+	  	<div class="modal-dialog modal-dialog-centered">
+	    	<div class="modal-content text-center">
+	      		<div class="modal-header">
+	        		<h5 class="modal-title">CONGRATULATIONS!!!</h5>
+	        		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+	        			<!-- <img src="images/icons/close-black.png" alt=""> -->
+	        		</button>
+	      		</div>
+			    <div class="modal-body">
+			        <p>Your PoshMArk Account is connected successfully</p>
+	      			<div class="row justify-content-center">
+	      				<div class="col-8">
+	      					<button type="button" class="btn-3 px-5" data-bs-dismiss="modal">Thank You!</button>
+	      				</div>
+	      			</div>
+	        		
+	      		</div>
+	    	</div>
+	  	</div>
+	</div>
+
+
 
 	<script type="text/javascript">
 
