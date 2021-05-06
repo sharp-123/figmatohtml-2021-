@@ -9,6 +9,7 @@
 	<!-- jquery -->
 	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/bootstrap.js"></script>
+	<script src="js/custom.js"></script>
 	<!-- <script src="js/bootstrap.min.js"></script> -->
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -33,6 +34,9 @@
 	      						<p class="off-white">johnstones@gmail.com</p>
 	      					</div>
 	      					<div class="icon orange-bg"><img src="images/icons/dashboard.png" alt=""></div>
+	      					<div class="close-sidebar ms-auto">
+	      						<button><img src="images/icons/close-white-bg.png" alt=""></button>
+	      					</div>
 	      				</div>
 	      			</div>
 		      		<h4 class="off-white">Menu</h4>
@@ -62,7 +66,7 @@
 			            	</a>
 			          	</li>
 			          	<li class="nav-item">
-				            <a class="nav-link" href="#">
+				            <a class="nav-link" href="settings.html">
 				              	<div class="icon"><img src="images/icons/settings.png" alt=""></div>
 				             	Settings
 				            </a>
@@ -73,6 +77,26 @@
 		    <!-- nav-end -->
 
 		    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mb-5">
+		    	<div class="mobile-header">
+		    		<div class="row">
+		    			<div class="col-6 d-flex align-items-center">
+		    				<button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="true" aria-label="Toggle navigation">
+								<img src="images/icons/menu-bar.png" align="">
+							</button>
+							<div class="logo-wrap">
+								<a class="logo" href="#">
+									<img src="images/logo.png" align="">
+								</a>
+							</div>
+		    			</div>
+		    			<div class="col-6 text-right">
+		    				<h3>John</h3>
+		    				<p class="tiny-text">johnstones@gmail.com</p>
+		    			</div>
+		    		</div>			    	
+		    	</div>
+		    	<!-- mobile-header-end -->
+
 		      	<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
 		        	<h1 class="text-uppercase">BILLING</h1>
 		    	</div>
