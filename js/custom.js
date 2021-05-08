@@ -20,6 +20,12 @@ $(document).ready(function() {
 
 	/////////////////////////////
 
+	$(".view-single-invoice-card").click(function(){
+		$(".invoice-card").toggleClass("close");
+		$(".single-invoice-card").toggleClass("open");
+	});
+	///////////////////////////
+
 
 (function () {
   var tagList = ['John Stones', 'John Stones'];

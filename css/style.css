@@ -134,6 +134,7 @@ border-radius: 6px; line-height: 14px;color: rgba(0, 34, 97, 0.6);cursor: pointe
 .card .card-header .icon.rounded-circle{display: flex;align-items: center;justify-content: center;
  width: 20px; height: 20px; background: #002261;}
  .card .card-header .card-header-wrap{ border-bottom: 1px solid rgba(1, 1, 1, 0.3);  }
+ .follow-tab .media-body {width: 100%; }
 .media-body h6{font-size: 12px}
 .media-body  p,.activity-btn a{font-size: 9px;}
 .offer-icon{width: 44px;height: 44px;display: flex;align-items: center;justify-content: center;font-size: 10px; color: #ffffff;}
@@ -147,12 +148,15 @@ ul.follow-list-options{margin: 0;padding: 0;text-align: center;}
 .follow-list-options li a:hover{background-color: #ffffff;}
 
 /*---------------*/
-.follow-tab ul.nav li .nav-link{color: rgba(0,0,0,0.4);font-size: 10px;font-weight: 700;position: relative;width: 100%;
- margin: 0;}
-.follow-tab ul.nav li .nav-link.active::before,.follow-tab ul.nav li .nav-link:hover::before{position: absolute;width: 100%;height: 2px;
+.follow-tab ul.nav li .nav-link,.shares-tab ul.nav li .nav-link{color: rgba(0,0,0,0.4);font-size: 10px;font-weight: 700;
+	position: relative;width: 100%; margin: 0;}
+.follow-tab ul.nav li .nav-link.active::before,.follow-tab ul.nav li .nav-link:hover::before,
+.shares-tab ul.nav li .nav-link.active::before,.shares-tab ul.nav li .nav-link:hover::before
+{position: absolute;width: 100%;height: 2px;
 	bottom: -1px;left: 0;content: ''; background-color: #002261;;}
-.follow-tab .nav-pills .nav-link.active, .nav-pills .show > .nav-link,
-.follow-tab ul.nav li .nav-link:hover{background-color: transparent;color: #002261;}
+.follow-tab .nav-pills .nav-link.active, .nav-pills .show > .nav-link,.follow-tab ul.nav li .nav-link:hover,
+.shares-tab .nav-pills .nav-link.active,.shares-tab  ul.nav li .nav-link:hover{background-color: transparent;color: #002261;}
+.shares-tab .nav-pills li{width: 50%;}
 
 /*-------graph--------*/
 .graph-tab ul.nav li{width: 20%;text-align: center;}
@@ -189,7 +193,6 @@ ul.follow-list-options{margin: 0;padding: 0;text-align: center;}
 /*-----------billing-------------*/
 .Package-box-wrap {display: flex; margin: 0 -10px;padding-top: 50px; }
 .Package-box-col {width: 33.33%; display: inline-block; padding: 0 10px; position: relative; }
-
 
 .Package-box {box-shadow: 0px 0px 15px 0px #00226133;background-color: #ffffff;transition:all 0.3s ease 0s; 
 	-webkit-transition: all 0.3s ease 0s; -moz-transition: all 0.3s ease 0s; -ms-transition: all 0.3s ease 0s;
@@ -243,6 +246,10 @@ background: #F6F6F6;box-shadow: 3px 3px 20px rgba(164, 164, 164, 0.25); }
 .modal-close:hover {color: black; }
 
 .payment-method .custom-form input.form-control{padding: 8px 10px;}
+
+
+.invoice-card.close,.single-invoice-card {display: none;}
+.single-invoice-card.open{display: block;}
 /*--------single-invoice-------*/
 .activty-btn.print-download {position: absolute; bottom: 15px; left: 15px; }
 .invoice-detail-single{padding: 0 15px;}
@@ -262,6 +269,18 @@ p.paid{font-size: 22px;font-weight: 700;}
 .single-invoice-description .payment-type-list li span.title{text-align: right; width:calc(100% - 80px); }
 .single-invoice-description .payment-type-list li span.value{font-family: Arial;}
 .single-invoice-description .payment-type-list li.total-payment{margin-top: 20px;font-weight: 700;font-size: 14px;}
+
+/*---package-modal---*/
+
+.package-modal .Package-box:hover {transform: unset;}
+.package-modal .modal-dialog{max-width: 250px;}
+.package-modal .modal-dialog .modal-content{border:none;}
+.package-modal .modal-dialog .modal-body {padding: 0; max-width: 250px;}
+.modal.package-modal .Package-box-col {width: 100%; padding: 0; }
+
+.package-success#cogratulations-popup .modal-body p{font-size: 12px;margin: 5px 0;} 
+.package-success#cogratulations-popup .modal-body p.tiny-text{font-size: 10px;} 
+.package-success#cogratulations-popup .modal-body h2{font-family: Arial;font-weight: bold; font-size: 42px; line-height: 20px;}
 
 /*--------------------*/
 /*  Toggle Switch  */
@@ -317,6 +336,12 @@ main{position: relative;padding-bottom: 100px;min-height: 100vh;}
 .footer ul li{display: inline-block;,margin-right: 15px;}
 .footer p{margin: 0;}
 
+/*---------user-account-----------*/
+.user-account-setting h3{font-weight: bold;font-size: 18px;line-height: 21px;color: #002261;}
+.user-account-setting p{color: rgba(0, 0, 0, 0.6);}
+.user-account-setting p.info-title {font-size: 12px;}
+.user-account-setting p.info-detail{color: #002261;font-size: 12px;}
+
 /*-------settings---------*/
 .setting-box:nth-child(even){background: rgba(0, 0, 0, 0.05);}
 .search-container input.form-control {background: rgba(0, 34, 97, 0.05); width: 100%;font-size: 14px; border-radius: 10px; 
@@ -339,9 +364,9 @@ ul.comment-status li{color: #FF0202;font-size: 12px;font-weight: 300;text-align:
 ul.comment-status li span{float: right;}
 .styled-checkbox.left-box + label:before{float: left;margin-left: 0;margin-right: 10px; }
 .styled-checkbox.left-box:checked + label:after{right: auto;left: 6px;}
-ul.offer-list{list-style: none;padding: 0;}
+ul.offer-list{list-style: none;padding: 0;display: flex;justify-content: space-between;}
 ul.offer-list li{display: inline-block;}
-ul.offer-list li a{box-shadow: 0px 4px 12px 0px #00226129;width: 40px;height: 40px;margin-right:25px;margin-bottom: 5px;
+ul.offer-list li a{box-shadow: 0px 4px 12px 0px #00226129;width: 40px;height: 40px;margin-bottom: 5px;
 	background-color: #fff;color: #002261;display: flex;align-items: center;justify-content: center;font-weight: 700;
 	font-size: 10px;border-radius: 50%;}
 ul.offer-list li:last-child a{margin-right: 0;}
@@ -391,8 +416,7 @@ height: 20px;float: right; background:transparent;border:2px solid #002261;}
 #cogratulations-popup .modal-content{border-radius: 0;padding: 20px 10px;}
 #cogratulations-popup .modal-header{border:none;}
 #cogratulations-popup .modal-header .btn-close{opacity: 1;}
-#cogratulations-popup .modal-title{font-weight: bold; font-size: 22px; line-height: 20px;width: 100%;padding:0 30px
-text-transform: capitalize;color: #002261;}
+#cogratulations-popup .modal-title{font-weight: bold; font-size: 22px; line-height: 20px;width: 100%;color: #002261;}
 #cogratulations-popup .modal-body p{font-size: 14px;
 line-height: 20px;text-transform: capitalize;color: rgba(0, 0, 0, 0.6);}
 .cogratulations-popup{}

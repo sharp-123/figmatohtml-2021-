@@ -35,7 +35,7 @@ nav#sidebarMenu.sidebar {max-width: 320px; top: 0; left: -1000%;transition:all 0
 -moz-transition: all 0.2s ease 0.5s; -ms-transition: all 0.2s ease 0.5s;-o-transition: all 0.2s ease 0.5s;}
 nav#sidebarMenu.sidebar.show{left: 0;}
 
-.sidebar .icon.orange-bg{display: none;}
+.sidebar .sidebar-header .icon.orange-bg{display: none;}
 nav#sidebarMenu.sidebar.show .close-sidebar{display: inline-block;}
 .footer{width: calc(100% - 30px);}
 }
@@ -43,7 +43,6 @@ nav#sidebarMenu.sidebar.show .close-sidebar{display: inline-block;}
 
 /*---------------*/
 @media screen and (max-width: 640px){
-
 }
 /*---------------*/
 @media screen and (max-width: 480px){
@@ -52,10 +51,15 @@ nav#sidebarMenu.sidebar.show .close-sidebar{display: inline-block;}
 .login-btn{padding: 10px;}
 .calendar-wrap .ui.form{min-width: 300px;}
 .activty-btn a.btn {width: 32px;height: 32px; margin: 0 2px 5px; padding: 5px;}
+.follow-list-options li a{background-color: #ffffff;}
+.user-account-setting p.info-title,.user-account-setting p.info-detail{font-size: 10px;}
 }
 
 
 /*---------------*/
 @media screen and (max-width: 400px){
 body{font-size: 12px;}
+#cogratulations-popup .modal-body{padding:0px 10px 20px;}
+#cogratulations-popup .modal-title{font-size: 18px;}
+#cogratulations-popup .modal-body p{font-size: 10px;}
 }
