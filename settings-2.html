@@ -111,10 +111,13 @@
 		    			<div class="card px-3 py-4 mb-3">
 		    				<div class="">
 		    					<h2>Connect Poshmark</h2>
-		    					<div class="d-flex align-items-center">		    						
-		    						<p class="my-1">Connect Your PoshMark Account</p>
+		    					<div class="d-flex align-items-center">
+		    						<div class="user-setting-detail">	
+			    						<h4>John</h4>	    						
+			    						<p class="tiny-text">johnstones@gmail.com</p>
+			    					</div>
 			    					<div class="right ms-auto">
-				    					<a class="add-btn" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img class="me-1" src="images/icons/plus.png" align="">Add</a>
+				    					<a class="add-btn red-bg" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img class="me-1" src="images/icons/unlink.png" align="">Unlink</a>
 				    				</div>
 		    					</div>
 		    				</div>
@@ -156,34 +159,6 @@
 										</p>
 				    				</div>
 		    					</div>
-		    					<div class="d-flex mt-2">
-			    					<div class="d-flex">
-			    						<p>Followers</p>
-			    						<p class="ms-2 me-3">
-										  	<label class="toggleSwitch nolabel" onclick="">
-										        <input type="checkbox" checked />
-										        <span>
-										            <span>OFF</span>
-										            <span>ON</span>
-										        </span>
-										        <a></a>
-										    </label>
-										</p>
-									</div>
-									<div class="d-flex">
-										<p>Posh Parties</p>
-			    						<p class="ms-2">
-										  	<label class="toggleSwitch nolabel" onclick="">
-										        <input type="checkbox" checked />
-										        <span>
-										            <span>OFF</span>
-										            <span>ON</span>
-										        </span>
-										        <a></a>
-										    </label>
-										</p>
-									</div>
-								</div>
 		    				</div>
 
 		    				<div class="setting-box px-3 py-4">
@@ -223,17 +198,11 @@
 				    				</div>
 		    					</div>
 		    				</div>
-	    				</div>
 
-	    			</div>
-	    			<!-- col-md-4 end -->
-
-	    			<div class="col-lg-4 mb-3">
-	    				<div class="card mb-3">
-	    					<div class="setting-box px-3 py-4">
-		    					<h2>Auto follow</h2>
+		    				<div class="setting-box px-3 py-4">
+		    					<h2>Reorganize Closet</h2>
 		    					<div class="d-flex align-items-center">		    						
-		    						<p class="my-1 me-2">This module automatically follows the followers of users randomly, with a % following you back (our software selects the most relevant users to follow) (Auto). OR Automatically follows the followers of users you choose (Custom).</p>
+		    						<p class="my-1 me-2">This module automatically reorganizes any live product listings in your closet to boost visibility. </p>
 			    					<div class="right ms-auto">
 				    					<p>
 										  	<label class="toggleSwitch nolabel" onclick="">
@@ -247,44 +216,57 @@
 										</p>
 				    				</div>
 		    					</div>
-		    					<p>No. of Of Follower/Day</p>
-		    					<div class="range-slider mb-5">
-			                        <input type="text" class="js-range-slider" value="" />
-			                    </div>
-
-		    					<div class="row">
-		    						<div class="col-6">		    						
-			    						<input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">	
-			    						<label for="styled-checkbox-1">Auto/Random</label>			
-			    					</div>
-			    					<div class="col-6 text-right">		    						
-			    						<input class="styled-checkbox" id="styled-checkbox-2" type="checkbox" value="value1">	
-			    						<label for="styled-checkbox-2">Custom</label>			
-			    					</div>
-			    				</div>
-
-			    				<div class="search-container my-3">
-								   <!--  <form action="">
-								      <input class="form-control" type="text" placeholder="Add User" name="search">
-								    </form> -->
-
-								    <div class="_box">
-									  <label class="visually-hidden" for="tagList">Add tag (Press ENTER to Add new Tag)</label>
-									  <input class="form-control" type="text" id="newTag" name="search"/>
-									  <ul id="tagList" class="taglist">
-									    <!-- All TagList Here! -->
-									  </ul>  
-									</div>
-								</div>
-		    				
 		    				</div>
+
+		    				<div class="setting-box px-3 py-4">
+		    					<h2>Auto Bundles</h2>
+		    					<div class="d-flex align-items-center">		    						
+		    						<p class="my-1 me-2">This module automatically sends users that like your listings bundles filled with products they will love.</p>
+			    					<div class="right ms-auto">
+				    					<p>
+										  	<label class="toggleSwitch nolabel" onclick="">
+										        <input type="checkbox" checked />
+										        <span>
+										            <span>OFF</span>
+										            <span>ON</span>
+										        </span>
+										        <a></a>
+										    </label>
+										</p>
+				    				</div>
+		    					</div>
+		    				</div>
+
 	    				</div>
 
+	    			</div>
+	    			<!-- col-md-4 end -->
+
+	    			<div class="col-lg-4 mb-3">
 	    				<div class="card mb-3">
 	    					<div class="setting-box px-3 py-4">
+		    					<h2>Auto Follow</h2>
+		    					<div class="d-flex align-items-center">		    						
+		    						<p class="my-1 me-2">Auto Unfollow automatically unfollows users you have followed but have not followed you back within 7 days.</p>
+			    					<div class="right ms-auto">
+				    					<p>
+										  	<label class="toggleSwitch nolabel" onclick="">
+										        <input type="checkbox" checked />
+										        <span>
+										            <span>OFF</span>
+										            <span>ON</span>
+										        </span>
+										        <a></a>
+										    </label>
+										</p>
+				    				</div>
+		    					</div>
+		    				</div>
+
+		    				<div class="setting-box px-3 py-4">
 		    					<h2>Auto Likes</h2>
 		    					<div class="d-flex align-items-center">		    						
-		    						<p class="my-1 me-2">This module automatically likes the products of sellers randomly (our software selects the most relevant products to like) (Auto). OR Automatically like the products of users you</p>
+		    						<p class="my-1 me-2">This module automatically shares your product listings to your followers and / or Posh Parties to give more visibility.</p>
 			    					<div class="right ms-auto">
 				    					<p>
 										  	<label class="toggleSwitch nolabel" onclick="">
@@ -298,147 +280,12 @@
 										</p>
 				    				</div>
 		    					</div>
-		    					<p>No. of LIkes/Day</p>
-		    					<div class="range-slider mb-5">
-			                        <input type="text" class="js-range-slider" value="" />
-			                    </div>
-
-		    					<div class="row">
-		    						<div class="col-6">		    						
-			    						<input class="styled-checkbox" id="styled-checkbox-3" type="checkbox" value="value1">	
-			    						<label for="styled-checkbox-3">Auto/Random</label>			
-			    					</div>
-			    					<div class="col-6 text-right">		    						
-			    						<input class="styled-checkbox" id="styled-checkbox-4" type="checkbox" value="value1">	
-			    						<label for="styled-checkbox-4">Custom</label>			
-			    					</div>
-			    				</div>
-
-			    				<div class="search-container my-3">
-								    <div class="_box">
-									  <label class="visually-hidden" for="tagList2">Add tag (Press ENTER to Add new Tag)</label>
-									  <input class="form-control" type="text" id="newTag2" name="search"/>
-									  <ul id="tagList2" class="taglist">
-									    <!-- All TagList Here! -->
-									  </ul>  
-									</div>
-								</div>
-		    				
 		    				</div>
-	    				</div>
 
-	    			</div>
-	    			<!-- col-md-4 end -->
-
-	    			<div class="col-lg-4 mb-3">
-	    				<div class="card mb-3">
-	    					<div class="setting-box px-3 py-4">
-		    					<h2>Auto Comments</h2>
-		    					<div class="d-flex align-items-center">		    						
-		    						<p class="my-1 me-2">This module posts comments to competitors product  listings randomly to give you more visibility. You can decide what comments are posted and the % of time  each comment is used.</p>
-			    					<div class="right ms-auto">
-				    					<p>
-										  	<label class="toggleSwitch nolabel" onclick="">
-										        <input type="checkbox" checked />
-										        <span>
-										            <span>OFF</span>
-										            <span>ON</span>
-										        </span>
-										        <a></a>
-										    </label>
-										</p>
-				    				</div>
-		    					</div>
-		    					<p>No. of Of Follower/Day</p>
-
-		    					<div class="range-slider mb-5">
-			                        <input type="text" class="js-range-slider" value="" />
-			                    </div>
-
-		    					<div class="d-block">
-			    					<p>
-									  	<label class="toggleSwitch nolabel" onclick="">
-									        <input type="checkbox" checked />
-									        <span>
-									            <span>OFF</span>
-									            <span>ON</span>
-									        </span>
-									        <a></a>
-									    </label>
-									</p>
-			    				</div>
-			    				<div class="d-block">
-			    					<p><a href="#" class="add-comment"><img class="me-2" src="images/icons/blue-plus.png" alt=""> Add Comment</a></p>
-			    				</div>
-		    				</div>
-	    					<div class="new-comment-box">
-	    						 <form class="row g-3 align-items-center">
-	    						 	<div class="col-xl-8 col-lg-7 col-8 form-group">
-									    <label for="" class="">Description</label>
-									    <input type="text" class="form-control" id="" placeholder="Comment">
-								  	</div>
-								  	<div class="col-xl-4 col-lg-5 col-4 form-group">
-								  		<fieldset>
-									    	<input type="button" value="" class="increase" />
-									    	<input type="text" id="first-value" value="0" />
-									        <input type="button" value="" class="decrease" />    
-									    </fieldset>	
-									  	
-							  		</div>
-							  	</form>
-							  	<a class="close-box" href="#"><img src="images/icons/red-bg-close.png" alt=""></a>
-							</div>
-
-							<div class="new-comment-box">
-	    						 <form class="row g-3 align-items-center">
-	    						 	<div class="col-xl-8 col-lg-7 col-8 form-group">
-									    <label for="" class="">Description</label>
-									    <input type="text" class="form-control" id="" placeholder="Comment">
-								  	</div>
-								  	<div class="col-xl-4 col-lg-5 col-4 form-group">
-									    <fieldset>
-									    	<input type="button" value="" class="increase" />
-									    	<input type="text" id="sec-value" value="0" />
-									        <input type="button" value="" class="decrease" />    
-									    </fieldset>	
-							  		</div>
-							  	</form>
-							  	<a class="close-box" href="#"><img src="images/icons/red-bg-close.png" alt=""></a>
-							</div>
-
-							<div class="new-comment-box">
-	    						 <form class="row g-3 align-items-center">
-	    						 	<div class="col-xl-8 col-lg-7 col-8 form-group">
-									    <label for="" class="">Description</label>
-									    <input type="text" class="form-control" id="" placeholder="Comment">
-								  	</div>
-								  	<div class="col-xl-4 col-lg-5 col-4 form-group">
-									    <fieldset>
-									    	<input type="button" value="" class="increase" />
-									    	<input type="text" id="three-value" value="0" />
-									        <input type="button" value="" class="decrease" />    
-									    </fieldset>									  	
-							  		</div>
-							  	</form>
-							  	<a class="close-box" href="#"><img src="images/icons/red-bg-close.png" alt=""></a>
-							</div>
-
-							<div class="new-comment-box text-center">
-								<ul class="comment-status">
-									<li>% Value must add up to <span>100%</span></li>
-									<li>Total % Value <span>90%</span></li>
-									<li>Total Number of Comments <span>537</span></li>
-								</ul>
-							</div>		    				
-	    					
-	    				</div>
-	    				<!-- card-end -->
-
-	    				<div class="card">	
-	    					<div class="setting-box px-3 py-4">
+		    				<div class="setting-box px-3 py-4">
 		    					<h2>Auto Offers</h2>
 		    					<div class="d-flex align-items-center">		    						
-		    						<p class="my-1 me-2">This module automatically sends users that like your listings special offers.</p>
+		    						<p class="my-1 me-2">This module automatically reorganizes any live product listings in your closet to boost visibility. </p>
 			    					<div class="right ms-auto">
 				    					<p>
 										  	<label class="toggleSwitch nolabel" onclick="">
@@ -452,39 +299,8 @@
 										</p>
 				    				</div>
 		    					</div>
-		    					<div class="my-3">	    						
-		    						<input class="styled-checkbox left-box" id="styled-checkbox-Profit" type="checkbox" value="value1">	
-		    						<label for="styled-checkbox-Profit">Profit goal in dollars</label>			
-		    					</div>
-		    					<p>You will always make at least this amount from any offer we send. </p>
-		    					<div class="">
-		    						<ul class="offer-list">
-		    							<li class="active"><a href="#">$5</a></li>
-		    							<li><a href="#">$10</a></li>
-		    							<li><a href="#">$20</a></li>
-		    							<li><a href="#">$50</a></li>
-		    							<li><a href="#">$100</a></li>
-		    						</ul>
-		    					</div>
-
-		    					<div class="my-3">	    						
-		    						<input class="styled-checkbox left-box" id="styled-checkbox-Profit-percentage" type="checkbox" value="value1">	
-		    						<label for="styled-checkbox-Profit-percentage">Profit goal as percentage</label>			
-		    					</div>
-		    					<p>You will always make at least this percentage from any offer. </p>
-		    					<div class="">
-		    						<ul class="offer-list">
-		    							<li class="active"><a href="#">$5</a></li>
-		    							<li><a href="#">$10</a></li>
-		    							<li><a href="#">$20</a></li>
-		    							<li><a href="#">$50</a></li>
-		    							<li><a href="#">$100</a></li>
-		    						</ul>
-		    					</div>
-		    					
-		    				</div>	    					
+		    				</div>
 	    				</div>
-	    				<!-- card-end -->
 
 	    				<div class="row my-4">
 	    					<div class="col-md-12">
@@ -492,9 +308,8 @@
 	    					</div>
 	    				</div>
 
-
 	    			</div>
-	    			<!-- col-md-4-end -->
+	    			<!-- col-md-4 end -->
 
 	    		</div>
 
@@ -570,7 +385,7 @@
 			        <p>Your PoshMArk Account is connected successfully</p>
 	      			<div class="row justify-content-center">
 	      				<div class="col-8">
-	      					<a href="settings-2.html" class="btn-3 px-3 px-md-5">Thank You!</a>
+	      					<button type="button" class="btn-3 px-3 px-md-5" data-bs-dismiss="modal">Thank You!</button>
 	      				</div>
 	      			</div>
 	        		
