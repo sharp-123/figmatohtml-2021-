@@ -1,6 +1,22 @@
 
 $(document).ready(function() {
 
+
+	//////////////////////////////////////
+
+	$('.test').click(function(e){
+    	$(this).parents(".d-flex").parent().toggleClass('open-options');
+    });
+
+    $('.commnet-btn-view').click(function(e){
+    	$(this).parents(".settings-options").parent().toggleClass('open-comment');
+    });
+
+    $('.add-comment').click(function(e){
+    	$(this).parents(".comment-add-option").parent().toggleClass('open-new-comment');
+    });
+
+
 	///////////////////////
 	$('.tab-content1').hide();
 	$('#tab-1').show();
@@ -96,6 +112,44 @@ $(document).ready(function() {
     var index = $(this).parent().index();
     tagList2.splice(index, 1);
     tagList2_render();
+  });
+})();
+
+
+//////////////////////
+
+(function () {
+  var tagList3 = ['John Stones', 'John Stones'];
+
+  var $tagList3 = $("#tagList3");
+  var $newTag3 = $("#newTag3");
+
+  tagList3_render();
+  
+  function tagList3_render () {
+    $tagList3.empty();
+    tagList3.map (function (_tag) {
+      var temp = '<li>'+ _tag +'<span class="rmTag">&times;</span></li>';
+      $tagList3.append(temp);
+    });
+  };
+  
+  $newTag3.on('keyup', function (e) {
+    // enter keycode 13
+    if (e.keyCode == 13) {
+      var newTag3 = $("#newTag3").val();
+      if( newTag3.replace(/\s/g, '') !== '' ){
+        tagList3.push(newTag3);
+        $newTag3.val('');
+        tagList3_render();
+      }
+    }
+  });
+  
+  $tagList3.on("click", "li>span.rmTag", function(){
+    var index = $(this).parent().index();
+    tagList3.splice(index, 1);
+    tagList3_render();
   });
 })();
 
