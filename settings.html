@@ -36,11 +36,11 @@
 	      				<div class="sidebar-header-wrap">
 	      					<div class="user-details text-white">
 	      						<h3>John</h3>
-	      						<p class="off-white">johnstones@gmail.com</p>
+	      						<!-- <p class="off-white">johnstones@gmail.com</p> -->
 	      					</div>
-	      					<div class="icon orange-bg"><img src="images/icons/dashboard.png" alt=""></div>
+	      					<div class="icon purple-bg"><img src="images/icons-svg/settings.svg" alt=""></div>
 	      					<div class="close-sidebar ms-auto">
-	      						<button><img src="images/icons/close-white-bg.png" alt=""></button>
+	      						<button><img src="images/icons-svg/close-white-bg.svg" alt=""></button>
 	      					</div>
 	      				</div>
 	      			</div>
@@ -48,31 +48,31 @@
 	        		<ul class="nav flex-column">
 			          	<li class="nav-item">
 			            	<a class="nav-link" aria-current="page" href="index.html">
-			              		<div class="icon orange-bg"><img src="images/icons/dashboard.png" alt=""></div>
+			              		<div class="icon orange-bg"><img src="images/icons-svg/dashboard.svg" alt=""></div>
 			             		Dashboard
 			            	</a>
 			          	</li>
 	          			<li class="nav-item">
 	            			<a class="nav-link" href="user-account.html">
-	              				<div class="icon green-bg"><img src="images/icons/user.png" alt=""></div>
+	              				<div class="icon green-bg"><img src="images/icons-svg/user.svg" alt=""></div>
               					User Account
 			            	</a>
 			          	</li>
 				        <li class="nav-item">
 				            <a class="nav-link" href="billing.html">
-				              	<div class="icon dark-blue-bg"><img src="images/icons/Group.png" alt=""></div>
+				              	<div class="icon dark-blue-bg"><img src="images/icons-svg/billing.svg" alt=""></div>
 				              	Billing & Invoice
 				            </a>
 				        </li>
 			          	<li class="nav-item">
 			            	<a class="nav-link" href="support.html">
-			              		<div class="icon purple-bg"><img src="images/icons/help.png" alt=""></div>
+			              		<div class="icon red-new-bg"><img src="images/icons-svg/help.svg" alt=""></div>
 			              		Support
 			            	</a>
 			          	</li>
 			          	<li class="nav-item">
 				            <a class="nav-link active" href="settings.html">
-				              	<div class="icon red-new-bg"><img src="images/icons/settings.png" alt=""></div>
+				              	<div class="icon purple-bg"><img src="images/icons-svg/settings.svg" alt=""></div>
 				             	Settings
 				            </a>
 			          	</li>
@@ -86,11 +86,11 @@
 		    		<div class="row">
 		    			<div class="col-6 d-flex align-items-center">
 		    				<button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="true" aria-label="Toggle navigation">
-								<img src="images/icons/menu-bar.png" align="">
+								<img src="images/icons-svg/menu-bar.svg" align="">
 							</button>
 							<div class="logo-wrap">
 								<a class="logo" href="#">
-									<img src="images/logo.png" align="">
+									<img src="images/logo.svg" align="">
 								</a>
 							</div>
 		    			</div>
@@ -109,12 +109,12 @@
 		    	<div class="row">
 		    		<div class="col-lg-4">
 		    			<div class="card px-3 py-4 mb-3">
-		    				<div class="">
+		    				<div class="setting-first-box">
 		    					<h2>Connect Poshmark</h2>
 		    					<div class="d-flex align-items-center">		    						
 		    						<p class="my-1">Connect Your PoshMark Account</p>
 			    					<div class="right ms-auto">
-				    					<a class="add-btn" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img class="me-1" src="images/icons/plus.png" align="">Add</a>
+				    					<a class="add-btn" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img class="me-1" src="images/icons-svg/plus.svg" align="">Add</a>
 				    				</div>
 		    					</div>
 		    				</div>
@@ -138,33 +138,9 @@
 										</p>
 				    				</div>
 		    					</div>
-		    					<div class="settings-options">
-			    					<p class="mb-0">No. of Of Follower/Day</p>
-			    					<div class="range-slider mb-5">
-				                        <input type="text" class="js-range-slider" value="" />
-				                    </div>
-
-			    					<div class="row">
-			    						<div class="col-6">		    						
-				    						<input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">	
-				    						<label for="styled-checkbox-1">Auto/Random</label>			
-				    					</div>
-				    					<div class="col-6 text-right">		    						
-				    						<input class="styled-checkbox" id="styled-checkbox-2" type="checkbox" value="value1">	
-				    						<label for="styled-checkbox-2">Custom</label>			
-				    					</div>
-				    				</div>
-				    				<div class="search-container my-3">
-									    <div class="_box">
-										  <label class="visually-hidden" for="tagList">Add tag (Press ENTER to Add new Tag)</label>
-										  <input class="form-control" type="text" id="newTag" name="search"/>
-										  <ul id="tagList" class="taglist">
-										    <!-- All TagList Here! -->
-										  </ul>  
-										</div>
-									</div>
-								</div>
 		    				</div>
+		    				<!-- Auto Unfollow -->
+
 		    				<div class="setting-box px-3 py-4">
 		    					<h2>Auto Share</h2>
 		    					<div class="d-flex align-items-center">		    						
@@ -213,6 +189,7 @@
 									</div>
 								</div>
 		    				</div>
+		    				<!-- Auto Share -->
 
 		    				<div class="setting-box px-3 py-4">
 		    					<h2>Reorganize Closet</h2>
@@ -231,37 +208,8 @@
 										</p>
 				    				</div>
 		    					</div>
-		    					<div class="settings-options">
-			    					<div class="d-flex mt-2">
-				    					<div class="d-flex">
-				    						<p>Followers</p>
-				    						<p class="ms-2 me-3">
-											  	<label class="toggleSwitch nolabel" onclick="">
-											        <input type="checkbox" checked />
-											        <span>
-											            <span>On</span>
-											            <span>Off</span>
-											        </span>
-											        <a></a>
-											    </label>
-											</p>
-										</div>
-										<div class="d-flex">
-											<p>Posh Parties</p>
-				    						<p class="ms-2">
-											  	<label class="toggleSwitch nolabel" onclick="">
-											        <input type="checkbox" checked />
-											        <span>
-											            <span>On</span>
-											            <span>Off</span>
-											        </span>
-											        <a></a>
-											    </label>
-											</p>
-										</div>
-									</div>
-								</div>
 		    				</div>
+		    				<!-- Reorganize Closet -->
 
 		    				<div class="setting-box px-3 py-4">
 		    					<h2>Auto Bundles</h2>
@@ -280,39 +228,9 @@
 										</p>
 				    				</div>
 		    					</div>
-		    					<div class="settings-options">
-			    					<div class="d-flex mt-2">
-				    					<div class="d-flex">
-				    						<p>Followers</p>
-				    						<p class="ms-2 me-3">
-											  	<label class="toggleSwitch nolabel" onclick="">
-											        <input type="checkbox" checked />
-											        <span>
-											            <span>On</span>
-											            <span>Off</span>
-											        </span>
-											        <a></a>
-											    </label>
-											</p>
-										</div>
-										<div class="d-flex">
-											<p>Posh Parties</p>
-				    						<p class="ms-2">
-											  	<label class="toggleSwitch nolabel" onclick="">
-											        <input type="checkbox" checked />
-											        <span>
-											            <span>On</span>
-											            <span>Off</span>
-											        </span>
-											        <a></a>
-											    </label>
-											</p>
-										</div>
-									</div>
-								</div>
 		    				</div>
+		    				<!-- Auto Bundles -->
 	    				</div>
-
 	    			</div>
 	    			<!-- col-md-4 end -->
 
@@ -336,18 +254,18 @@
 				    				</div>
 		    					</div>
 		    					<div class="settings-options">
-			    					<p class="mb-0 mt-2">No. of Of Follower/Day</p>
-			    					<div class="range-slider mb-5">
+			    					<p class="mb-0 mt-2 no-of-follower">No. of Follower/Day</p>
+			    					<div class="range-slider mb-4">
 				                        <input type="text" class="js-range-slider" value="" />
 				                    </div>
 
 			    					<div class="row">
 			    						<div class="col-6">		    						
-				    						<input class="styled-checkbox" id="styled-checkbox-99" type="checkbox" value="value1">	
+				    						<input class="styled-checkbox" id="styled-checkbox-99" type="checkbox" value="value1" name="checkbox1" checked>	
 				    						<label for="styled-checkbox-99">Auto/Random</label>			
 				    					</div>
 				    					<div class="col-6 text-right">		    						
-				    						<input class="styled-checkbox" id="styled-checkbox-98" type="checkbox" value="value1">	
+				    						<input class="styled-checkbox custom-checkbox" id="styled-checkbox-98" type="checkbox" value="value1" name="checkbox1">	
 				    						<label for="styled-checkbox-98">Custom</label>			
 				    					</div>
 				    				</div>
@@ -383,18 +301,18 @@
 				    				</div>
 		    					</div>
 		    					<div class="settings-options">
-			    					<p class="mb-0 mt-2">No. of LIkes/Day</p>
-			    					<div class="range-slider mb-5">
+			    					<p class="mb-0 mt-2 no-of-follower">No. of LIkes/Day</p>
+			    					<div class="range-slider mb-4">
 				                        <input type="text" class="js-range-slider" value="" />
 				                    </div>
 
 			    					<div class="row">
 			    						<div class="col-6">		    						
-				    						<input class="styled-checkbox" id="styled-checkbox-3" type="checkbox" value="value1">	
+				    						<input class="styled-checkbox" id="styled-checkbox-3" type="checkbox" value="value1" name="checkbox2" checked="">	
 				    						<label for="styled-checkbox-3">Auto/Random</label>			
 				    					</div>
 				    					<div class="col-6 text-right">		    						
-				    						<input class="styled-checkbox" id="styled-checkbox-4" type="checkbox" value="value1">	
+				    						<input class="styled-checkbox custom-checkbox" id="styled-checkbox-4" type="checkbox" value="value1" name="checkbox2">	
 				    						<label for="styled-checkbox-4">Custom</label>			
 				    					</div>
 				    				</div>
@@ -436,28 +354,17 @@
 				    				</div>
 		    					</div>
 		    					<div class="settings-options">
-			    					<p>No. of Of Follower/Day</p>
+			    					<p class="no-of-follower mb-0 mt-2">No. of Comments/Day</p>
 
-			    					<div class="range-slider mb-5">
+			    					<div class="range-slider mb-4">
 				                        <input type="text" class="js-range-slider" value="" />
 				                    </div>
 
-			    					<div class="d-block">
-				    					<p>
-										  	<label class="toggleSwitch nolabel" onclick="">
-										        <input type="checkbox" class="commnet-btn-view" checked />
-										        <span>
-										            <span>On</span>
-										            <span>Off</span>
-										        </span>
-										        <a></a>
-										    </label>
-										</p>
-				    				</div>
+			    					<div class="comment-add-option">
+			    						<p><a href="javascript:void(0)" class="add-comment"><img class="me-2" src="images/icons-svg/blue-plus.svg" alt=""> Add Comment</a></p>
+			    					</div>
 				    			</div>
-			    				<div class="comment-add-option">
-			    					<p><a href="#" class="add-comment"><img class="me-2" src="images/icons/blue-plus.png" alt=""> Add Comment</a></p>
-			    				</div>
+			    				
 		    				</div>
 		    				<div class="comment-add-box">
 		    					<div class="new-comment-box">
@@ -467,59 +374,24 @@
 										    <input type="text" class="form-control" id="" placeholder="Comment">
 									  	</div>
 									  	<div class="col-xl-4 col-lg-5 col-4 form-group">
-									  		<fieldset>
-										    	<input type="button" value="" class="increase" />
-										    	<input type="text" id="first-value" value="0" />
-										        <input type="button" value="" class="decrease" />    
-										    </fieldset>	
+										    <div class="qtySelector text-center">
+				                              <div class="increaseQty"><img src="images/icons-svg/plus-bg.svg" alt=""></div>	
+				                              <span class="percentageinput"><input type="Number" class="qtyValue" value="1" /><span>%</span></span>
+				                              <div class="decreaseQty"><img src="images/icons-svg/minus-bg.svg" alt=""></div>
+				                            </div>
 										  	
 								  		</div>
 								  	</form>
-								  	<a class="close-box" href="#"><img src="images/icons/red-bg-close.png" alt=""></a>
-								</div>
-
-								<div class="new-comment-box">
-		    						 <form class="row g-3 align-items-center">
-		    						 	<div class="col-xl-8 col-lg-7 col-8 form-group">
-										    <label for="" class="">Description</label>
-										    <input type="text" class="form-control" id="" placeholder="Comment">
-									  	</div>
-									  	<div class="col-xl-4 col-lg-5 col-4 form-group">
-										    <fieldset>
-										    	<input type="button" value="" class="increase" />
-										    	<input type="text" id="sec-value" value="0" />
-										        <input type="button" value="" class="decrease" />    
-										    </fieldset>	
-								  		</div>
-								  	</form>
-								  	<a class="close-box" href="#"><img src="images/icons/red-bg-close.png" alt=""></a>
-								</div>
-
-								<div class="new-comment-box">
-		    						 <form class="row g-3 align-items-center">
-		    						 	<div class="col-xl-8 col-lg-7 col-8 form-group">
-										    <label for="" class="">Description</label>
-										    <input type="text" class="form-control" id="" placeholder="Comment">
-									  	</div>
-									  	<div class="col-xl-4 col-lg-5 col-4 form-group">
-										    <fieldset>
-										    	<input type="button" value="" class="increase" />
-										    	<input type="text" id="three-value" value="0" />
-										        <input type="button" value="" class="decrease" />    
-										    </fieldset>									  	
-								  		</div>
-								  	</form>
-								  	<a class="close-box" href="#"><img src="images/icons/red-bg-close.png" alt=""></a>
-								</div>
-
-								<div class="new-comment-box text-center">
+								  	<a class="close-box remove-field" href="javascript:void(0)"><img src="images/icons-svg/red-bg-close.svg" alt=""></a>
+								</div>									
+							</div>
+								<div class="new-comment-status-box text-center">
 									<ul class="comment-status">
 										<li>% Value must add up to <span>100%</span></li>
 										<li>Total % Value <span>90%</span></li>
 										<li>Total Number of Comments <span>537</span></li>
 									</ul>
-								</div>	
-							</div>	    				
+								</div>	    				
 	    					
 	    				</div>
 	    				<!-- card-end -->
@@ -542,9 +414,9 @@
 										</p>
 				    				</div>
 		    					</div>
-		    					<div class="settings-options">
+		    					<div class="settings-options auto-offers">
 			    					<div class="my-3">	    						
-			    						<input class="styled-checkbox left-box" id="styled-checkbox-Profit" type="checkbox" value="value1">	
+			    						<input class="styled-checkbox left-box" id="styled-checkbox-Profit" type="checkbox" value="value1" name="checkbox3">	
 			    						<label for="styled-checkbox-Profit">Profit goal in dollars</label>			
 			    					</div>
 			    					<p>You will always make at least this amount from any offer we send. </p>
@@ -559,7 +431,7 @@
 			    					</div>
 
 			    					<div class="my-3">	    						
-			    						<input class="styled-checkbox left-box" id="styled-checkbox-Profit-percentage" type="checkbox" value="value1">	
+			    						<input class="styled-checkbox left-box" id="styled-checkbox-Profit-percentage" type="checkbox" value="value1" name="checkbox3">	
 			    						<label for="styled-checkbox-Profit-percentage">Profit goal as percentage</label>			
 			    					</div>
 			    					<p>You will always make at least this percentage from any offer. </p>
@@ -675,46 +547,31 @@
 
 	<script type="text/javascript">
 
-		function increaseValue() {
-		  var value = parseInt(document.getElementById('number').value, 10);
-		  value = isNaN(value) ? 0 : value;
-		  value++;
-		  document.getElementById('number').value = value;
-		}
-
-		function decreaseValue() {
-		  var value = parseInt(document.getElementById('number').value, 10);
-		  value = isNaN(value) ? 0 : value;
-		  value < 1 ? value = 1 : '';
-		  value--;
-		  document.getElementById('number').value = value;
-		}
-
-
-		$(function () {
-
-		    set_($('#first-value'), 100);  
-		    set_($('#sec-value'), 100);    
-		    set_($('#three-value'), 100);  
-
-		    function set_(_this, max) {
-		        var block = _this.parent();
-
-		        block.find(".increase").click(function () {
-		            var currentVal = parseInt(_this.val());
-		            if (currentVal != NaN && (currentVal + 1) <= max) {
-		                _this.val(currentVal + 1);
-		            }
-		        });
-
-		        block.find(".decrease").click(function () {
-		            var currentVal = parseInt(_this.val());
-		            if (currentVal != NaN && currentVal != 0) {
-		                _this.val(currentVal - 1);
-		            }
-		        });
-		    }
-		});
+		var minVal = 1, maxVal = 100; 
+			$(".increaseQty").on('click', function(){
+			    var $parentElm = $(this).parents(".qtySelector");
+			    $(this).addClass("clicked");
+			    setTimeout(function(){
+			      $(".clicked").removeClass("clicked");
+			    },100);
+			    var value = $parentElm.find(".qtyValue").val();
+			    if (value < maxVal) {
+			      value++;
+			    }
+			    $parentElm.find(".qtyValue").val(value);
+			});
+			$(".decreaseQty").on('click', function(){
+			    var $parentElm = $(this).parents(".qtySelector");
+			    $(this).addClass("clicked");
+			    setTimeout(function(){
+			      $(".clicked").removeClass("clicked");
+			    },100);
+			    var value = $parentElm.find(".qtyValue").val();
+			    if (value > 1) {
+			      value--;
+			    }
+			    $parentElm.find(".qtyValue").val(value);
+			  });
 
 	</script>
 </body>

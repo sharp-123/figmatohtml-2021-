@@ -5,7 +5,7 @@
 .range-slider .irs span.irs-from,
 .range-slider .irs span.irs-to,
 .range-slider .irs span.irs-single {
-    bottom: -20px;
+    bottom: -8px;
     background-color: transparent;color: rgba(0,0,0,0.4);
     top: auto;
 }
@@ -200,13 +200,13 @@ span.irs-bar {
 // Skin details */
 
 .irs {
-    height: 55px;
+    height: 40px;
 }
 .irs-with-grid {
     height: 75px;
 }
 .irs-line {
-    height: 10px; top: 33px;
+    height: 10px; top: 25px;
     background: #EEE;
     background: linear-gradient(to bottom, #DDD -50%, #FFF 150%); /* W3C */
     border: 1px solid #CCC;
@@ -224,14 +224,14 @@ span.irs-bar {
     }
 
 .irs-bar {
-    height: 10px; top: 33px;
+    height: 10px; top: 25px;
     border-top: 1px solid #428bca;
     border-bottom: 1px solid #428bca;
     background: #428bca;
     background: linear-gradient(to top, rgba(66,139,202,1) 0%,rgba(127,195,232,1) 100%); /* W3C */
 }
     .irs-bar-edge {
-        height: 10px; top: 33px;
+        height: 10px; top: 25px;
         width: 14px;
         border: 1px solid #428bca;
         border-right: 0;
@@ -285,7 +285,7 @@ span.irs-bar {
 
 .irs-from, .irs-to, .irs-single {
     color: #fff;
-    font-size: 14px; line-height: 1.333;
+    font-size: 10px; line-height: 12px;
     text-shadow: none;
     padding: 1px 5px;
     background: #428bca;

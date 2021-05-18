@@ -1,23 +1,63 @@
 
 $(document).ready(function() {
 
+  /////////////////////////////
 
+
+  $('#rangeend .popup.calendar .ui').click(function(e){
+      $('#rangeend .popup.calendar').addClass('hide-calender');
+  });
 	//////////////////////////////////////
 
 	$('.test').click(function(e){
     	$(this).parents(".d-flex").parent().toggleClass('open-options');
     });
 
-    $('.commnet-btn-view').click(function(e){
+   $('.commnet-btn-view').click(function(e){
     	$(this).parents(".settings-options").parent().toggleClass('open-comment');
     });
 
     $('.add-comment').click(function(e){
-    	$(this).parents(".comment-add-option").parent().toggleClass('open-new-comment');
+    	$(this).parents(".setting-box").parent().addClass('open-new-comment');
+    });
+
+    $('.styled-checkbox').click(function(e){
+      $(this).parents(".settings-options").parent().removeClass('open-search-box');
+    });
+
+    $('.styled-checkbox.custom-checkbox').click(function(e){
+      $(this).parents(".settings-options").parent().toggleClass('open-search-box');
+    });
+    
+
+
+
+     $('.card').each(function() {
+        var $wrapper = $('.comment-add-box', this);
+        $(".add-comment", $(this)).click(function(e) {
+            $('.new-comment-box:first-child', $wrapper).clone(true).appendTo($wrapper).find('input').val('').focus();
+        });
+        $('.new-comment-box .remove-field', $wrapper).click(function() {
+            if ($('.new-comment-box', $wrapper).length > 1)
+                $(this).parent('.new-comment-box').remove();
+        });
+     });
+    ////////////////////////////////////////
+
+    $("input:checkbox").on('click', function() {
+      var $box = $(this);
+      if ($box.is(":checked")) {
+        var group = "input:checkbox[name='" + $box.attr("name") + "']";
+        $(group).prop("checked", false);
+        $box.prop("checked", true);
+      } else {
+        $box.prop("checked", false);
+      }
     });
 
 
 	///////////////////////
+
 	$('.tab-content1').hide();
 	$('#tab-1').show();
 
@@ -40,6 +80,13 @@ $(document).ready(function() {
 		$(".invoice-card").toggleClass("close");
 		$(".single-invoice-card").toggleClass("open");
 	});
+
+  $(".single-invoice-card .close-btn").click(function(){
+    $(".invoice-card").removeClass("close");
+    $(".single-invoice-card").removeClass("open");
+  });
+
+
 	///////////////////////////
 
 
